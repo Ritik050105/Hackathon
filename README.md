@@ -16,18 +16,15 @@ This project automates the process of extracting, summarizing, and analyzing new
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/newspaper-summarization.git
-Install the required dependencies:
 
+Install the required dependencies:
 bash
-Copy
 pip install -r requirements.txt
 Usage
 Place your newspaper image in the project directory.
 
 Run the script:
-
 bash
-Copy
 python main.py
 The output files (extracted_text.txt, summarized_text.txt, final_output.txt, and output_audio.mp3) will be generated in the project directory.
 
@@ -44,9 +41,6 @@ Add visualizations for sentiment and keyword analysis.
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-Copy
-
 ---
 
 ## **Step 5: Tools for Creating the PPT and Video**

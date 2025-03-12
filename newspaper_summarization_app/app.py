@@ -103,23 +103,6 @@ def text_to_speech(text, output_file="output_audio.mp3"):
         st.error(f"Error converting text to speech: {e}")
         return None
 
-# Function to auto-download the audio file using JavaScript
-def auto_download_audio(file_path):
-    with open(file_path, "rb") as f:
-        audio_bytes = f.read()
-    b64 = base64.b64encode(audio_bytes).decode()
-    js_code = f"""
-    <script>
-    var link = document.createElement('a');
-    link.href = "data:audio/mp3;base64,{b64}";
-    link.download = "{file_path}";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    </script>
-    """
-    st.components.v1.html(js_code, height=0)
-
 # Streamlit app
 def main():
     st.title("Automated Newspaper Summarization and Analysis")
@@ -174,8 +157,15 @@ def main():
                     st.subheader("Audio Output")
                     st.audio(audio_file, format="audio/mp3", autoplay=True)  # Autoplay the audio
 
-                    # Auto-download the audio file
-                    auto_download_audio(audio_file)
+                    # Provide a one-click download button
+                    with open(audio_file, "rb") as f:
+                        audio_bytes = f.read()
+                    st.download_button(
+                        label="Download Audio",
+                        data=audio_bytes,
+                        file_name="output_audio.mp3",
+                        mime="audio/mp3"
+                    )
         else:
             st.error("No text extracted from the image. Please try another image.")
 
