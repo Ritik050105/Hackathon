@@ -52,5 +52,5 @@ def process_newspaper(image_path):
 
 # Example usage
 if __name__ == "__main__":
-    image_path = r"D:\UNSTOP\Hackathon\Delta Headlines\0fd2c2fe-925b-4b05-bef1-693a6021b016.jpg"# Use raw string for Windows paths
+    image_path = r"D:\UNSTOP\Hackathon\Delta Headlines\1d212958-0179-4b1f-937d-5fd0bf67d245.jpg"
     process_newspaper(image_path)
