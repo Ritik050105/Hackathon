@@ -43,15 +43,4 @@ License
 This project is licensed under the MIT License. See the LICENSE file for details.
 ---
 
-## **Step 5: Tools for Creating the PPT and Video**
-1. **PPT Creation**:
-   - Use **Canva** (https://www.canva.com/) for pre-designed templates.
-   - Use **Google Slides** (https://slides.google.com) for collaborative editing.
-
-2. **Video Creation**:
-   - Use **Loom** (https://www.loom.com/) for screen recording with voiceover.
-   - Use **Animoto** (https://animoto.com/) for creating professional videos.
-
----
-
 Let me know if you need further assistance!
