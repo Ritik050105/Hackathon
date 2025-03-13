@@ -1,5 +1,5 @@
 streamlit==1.26.0
-Pillow==10.0.0
+Pillow==9.5.0  # Downgraded to a version compatible with streamlit
 pytesseract==0.3.10
 pyttsx3==2.90
 nltk==3.8.1
